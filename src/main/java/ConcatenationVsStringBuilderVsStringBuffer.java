@@ -9,11 +9,11 @@ public class ConcatenationVsStringBuilderVsStringBuffer {
 
     public static void main(String[] args) {
 
-        final int MILLIS = 1_000_000;
+        final int MILLI_SECONDS = 1_000_000;
 
         String stringExample = "";
         long startString = System.currentTimeMillis();
-        for (int i = 0; i < MILLIS; i++) {
+        for (int i = 0; i < MILLI_SECONDS; i++) {
             stringExample += "a";
         }
         long stopString = System.currentTimeMillis();
@@ -25,7 +25,7 @@ public class ConcatenationVsStringBuilderVsStringBuffer {
 
         StringBuilder stringBuilderExample = new StringBuilder();
         long startStringBuilder = System.currentTimeMillis();
-        for (int i = 0; i < MILLIS; i++) {
+        for (int i = 0; i < MILLI_SECONDS; i++) {
             stringBuilderExample.append("a");
         }
         long stopStringBuilder = System.currentTimeMillis();
@@ -37,7 +37,7 @@ public class ConcatenationVsStringBuilderVsStringBuffer {
 
         StringBuilder stringBufferExample = new StringBuilder();
         long startStringBuffer = System.currentTimeMillis();
-        for (int i = 0; i < MILLIS; i++) {
+        for (int i = 0; i < MILLI_SECONDS; i++) {
             stringBufferExample.append("a");
         }
         long stopStringBuffer = System.currentTimeMillis();
