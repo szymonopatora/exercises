@@ -1,0 +1,18 @@
+1. Create a class representing an Employee, with fields:
+* first name;
+* last name;
+* date of birth;
+* salary;
+* company name;
+
+Create a list with 10 Employees, with different data.
+
+2. Calculate salary average of a chosen company.
+
+3. Calculate how much earn all the women from the list.
+
+4. Check in which company works the best earning employee.
+
+5. Create the list of the employees, sorted by age, who are 30 or less years old.
+
+6. Generate the list of the employees with an 10% salary increase.
