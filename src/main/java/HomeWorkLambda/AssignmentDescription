@@ -1,6 +1,7 @@
 1. Create a class representing an Employee, with fields:
 * first name;
 * last name;
+* gender;
 * date of birth;
 * salary;
 * company name;

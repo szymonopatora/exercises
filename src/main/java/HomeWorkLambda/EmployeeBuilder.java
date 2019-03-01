@@ -44,7 +44,7 @@ public class EmployeeBuilder {
         return new Employee(Optional.ofNullable(firstName).orElse("Unknown"),
                 Optional.ofNullable(lastName).orElse("Unknown"),
                 Optional.ofNullable(gender).orElse(Gender.UNKNOWN),
-                dateOfBirth, salary,
+                dateOfBirth,salary,
                 Optional.ofNullable(companyName).orElse("Unknown"));
     }
 }

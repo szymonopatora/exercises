@@ -17,7 +17,7 @@ public class Employee {
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.salary = salary;
-        this.companyName=companyName;
+        this.companyName = companyName;
     }
 
     public String getFirstName() {
@@ -70,6 +70,7 @@ public class Employee {
 
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
