@@ -20,7 +20,8 @@ public class HomeWorkTask4 {
                 .max((a,b)->a.getSalary()-b.getSalary())
                 .map(a->a.getCompanyName())
                 .ifPresent(System.out::println);
-//Done!! :)
+
+        //Done!! :)
     }
 
 }

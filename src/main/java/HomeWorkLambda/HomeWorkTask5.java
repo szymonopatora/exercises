@@ -18,9 +18,10 @@ public class HomeWorkTask5 {
 
         List<Employee> employees = getEmployees();
         employees.stream()
-                .map(x -> x.getDateOfBirth())
-                .sorted((a, b) -> a.compareTo(b))
-                //.map(Object::toString)
+                .filter(x -> x.getDateOfBirth().plusYears(30).isAfter(LocalDate.now()))
+                .sorted(Comparator.comparing(Employee::getSalary))
+                //.filter(x-> LocalDate.now().getYear() - x.getDateOfBirth().getYear() <=30)
+                //.sorted((a, b) -> b.getDateOfBirth().getYear() - a.getDateOfBirth().getYear())
                 .forEach(System.out::println);
         //TODO
         //a lot ;)

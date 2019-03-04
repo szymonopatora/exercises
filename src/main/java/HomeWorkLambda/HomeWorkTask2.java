@@ -16,10 +16,10 @@ public class HomeWorkTask2 {
         List<Employee> employees = getEmployees();
         employees.stream()
                 .filter(x -> (x.getCompanyName().equals("NBP")))
-                .map(Employee::getSalary)
-            .forEach(System.out::println);
-        //TODO
-        //Sum the results and calculate the average
+                .mapToInt(Employee::getSalary)
+                .average()
+            .ifPresent(System.out::println);
+        //Done!!! :)
 
     }
 }

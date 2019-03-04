@@ -17,7 +17,7 @@ public class HomeWorkTask6 {
         List<Employee> employees = getEmployees();
         employees.stream()
                 .map(Employee::getSalary)
-                .map(x->(x+(x*0.10)))
+                .map(x->(x*1.10))
                 .forEach(System.out::println);
         //TODO
         //change from getSalary() to Employee

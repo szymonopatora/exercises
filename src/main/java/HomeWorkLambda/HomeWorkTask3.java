@@ -14,13 +14,11 @@ public class HomeWorkTask3 {
     public static void main(String[] args) {
 
         List<Employee> employees = getEmployees();
-        employees.stream()
+        System.out.println(employees.stream()
                 .filter(x -> x.getGender().equals(Gender.FEMALE))
-                .map(x->x.getSalary())
-                //.map((x,y)->(x+y))
-                .forEach(System.out::println);
-        //TODO
-        //Summ the results
+                .mapToInt(x->x.getSalary())
+                .sum()
+        );
     }
 
 
